@@ -1,0 +1,29 @@
+1. To run gdb debugger in c++ program compile program using -g option
+    a. g++ -g <cpp file> -o <output file>
+    b. ex -- g++ -g gdb.cc -o gdb
+
+2. Once program is compiled run with gdb option
+   -- gdb gdb (Specify output file which we get after compilation)
+
+
+3. Once we enter gdb mode first we need to apply breakpoints then run program
+
+1. b -- Apply breakpoint. Pass function name to it
+
+2. r, run -- Run program and stops where breakpoints is added
+
+3. n, next -- Go to next line
+
+4. p, print -- print any variable value
+
+5. s, step -- go inside function
+
+6. f, frame -- display current position where you are.
+
+7. bt, backtrace -- Shows path from begining to current position. How you reached there
+
+8. info break -- List all breakpoints in your program
+
+9. c, continue -- If you apply breakpoint to func and enter continue it will go to that func directly.
+
+10. q, quit -- Quit gdb
