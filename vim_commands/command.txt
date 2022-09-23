@@ -1,0 +1,27 @@
+1. vim <filename> -- Opens file if exists or creates one and opens it.
+
+2. i -- Insert mode to write txt
+
+3. esc -- Enter esc to exit from insert mode
+
+4. :w -- Writes the content to file. Perform save operation
+
+5. :wq -- Write & exit from file.
+
+6. :q -- quit vim (unsaved)
+
+7. yy -- Copy line where cursor exists
+entering a number before yy (<n>yy) copies <n> number of lines from the line where cursor exists.
+example: 7yy copies 7 lines.
+
+8. p -- paste content where cursor exists
+
+8. dd -- delete a line where cursor exists
+entering a number before dd (<n>dd) deletes <n> number of lines from the line where cursor exists.
+example: 5dd deletes 5 lines.
+
+9. / backward search n -- Used find next occurrence
+
+10. / <string> -- Find all occurrence.
+
+11. :set number -- Set line number

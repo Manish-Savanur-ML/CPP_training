@@ -1,0 +1,7 @@
+Valgrind is a tool to detect any potential memeory leaks in cpp program
+
+Install in ubuntu : apt install valgrind
+
+Run CPP program, compile code using -g & run valgrind ./<output file>
+
+To get details on memory leak run --  valgrind --leak-check=full --show-leak-kinds=all ./<output_file>

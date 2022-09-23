@@ -1,0 +1,27 @@
+1. git init -- Initialize git directory
+
+2. git clone -- Clone git repository to local
+
+3. git branch -- list git branch
+
+4. git checkout -b <branch name> -- Creates branch & switch to new branch
+
+5. git add -- Add changes to staging.
+
+6. git commit -- Commit staged changes and commit to project history
+
+7. git push origin <branch> -- Push committed changes to branch
+
+8. git pull -- Pull changes from remote to local
+
+9. git rebase -- Rewites commit history where it pull changes from remote to local on top of feature commits. This gives clear history of our project
+
+10. git log -- List all commits on that branch
+
+11. git stash -- Save our changes locally in git temp location.
+
+12. git stash apply -- Apply saved changes back.
+
+13. git checkout <branch> -- Switch to branch. Does not create branch
+
+14. git status -- list changes done in current working directory & staged snapshot

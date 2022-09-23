@@ -1,0 +1,29 @@
+grep commands process text file line by line and prints the line if it matches
+
+grep [options] PATTERN [FILE]
+
+1. grep chope /etc/passwd -- Search /etc/passwd for user chope
+
+2. grep "May 31 03" /etc/httpd/logs/error.log -- It search the error.log for error entries happened on May 31 at 3 AM.
+
+3. grep -r "computer" /wwww/ -- It will recursively search for computer in wwww directory.
+
+4. grep -w "hope" file.txt -- Search file.txt for lines containing word hope.
+
+5. grep -cw "hope" file.txt -- Display count of hope where it matches line
+
+6. grep -cvw "hope" file.txt -- count lines where it does not contain hope. 
+
+7. grep wi "hope" file.txt -- Look for word hope in file.txt. Search will be non case sensitive
+
+8. grep win "hope" file.txt -- display where match found along with line number
+
+9. grep winl "hope" -- Search string in current location where match found. It will display file path
+
+10. grep winrl "hope" -- Recursive Search string in current location where match found. It will display file path
+
+11. grep win "./*.txt" -- Search string in all txt file in current location
+
+12] history | grep "git commit" -- searches for "git commit" command in history of linux commands.
+
+13] history | grep "git commit" | grep "dotfile" -- searches for "git commit" on "dotfile" command in history of linux commands.

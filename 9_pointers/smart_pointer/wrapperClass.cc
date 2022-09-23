@@ -10,7 +10,10 @@ class smartInt
 public:
     explicit smartInt(int *p = nullptr) { pointer = p; }
     ~smartInt() { delete pointer; }
-    int& operator*() { return *pointer; }
+    int& operator*() {
+        cout << pointer << endl;
+        return *pointer; 
+    }
 };
 
 int main()
