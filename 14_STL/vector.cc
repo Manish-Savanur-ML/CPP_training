@@ -22,7 +22,7 @@ class Vector
         for (ptr = toll_price.begin(); ptr != toll_price.end(); ptr++)
         {
             cout << *ptr << " "; // Print elements
-	    cout << &(*ptr) << endl;
+	    //cout << &(*ptr) << endl;
         }
         cout << endl;
     }

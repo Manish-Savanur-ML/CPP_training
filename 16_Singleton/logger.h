@@ -1,9 +1,11 @@
 #include<iostream>
 #include<fstream>
 #include<string>
+#include<mutex>
 using namespace std;
 class Logger
 {
+    static mutex m;
     Logger()
     {
         count++;
@@ -18,13 +20,16 @@ class Logger
     }
     static Logger* getInstance()
     {
+        m.lock();
         if (instance == nullptr)
 	{
             instance = new Logger();
+	    m.unlock();
 	    return instance;
 	}
 	else
 	{
+            m.unlock();
 	    return instance;
 	}
     }
@@ -43,3 +48,4 @@ class Logger
 };
 int Logger::count = 0;
 Logger* Logger::instance = nullptr;
+mutex Logger::m;
